@@ -23,7 +23,7 @@ const AppLayout = (props) => {
     <Box
       sx={{
         display: "grid",
-        gridTemplateColumns: "20rem 1fr",
+        gridTemplateColumns: "auto 1fr",
         gridTemplateRows: "auto 1fr",
         height: "100vh",
       }}

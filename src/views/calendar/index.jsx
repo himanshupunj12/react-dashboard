@@ -14,6 +14,26 @@ import interactionPlugin from "@fullcalendar/interaction";
 import listPlugin from "@fullcalendar/list";
 import { useState } from "react";
 import { tokens } from "../../theme";
+
+// sample events
+let eventGuid = 0;
+const todayStr = new Date().toISOString().replace(/T.*$/, "");
+function createEventId() {
+  return String(eventGuid++);
+}
+const INITIAL_EVENTS = [
+  {
+    id: createEventId(),
+    title: "All-day event",
+    start: todayStr,
+  },
+  {
+    id: createEventId(),
+    title: "Timed event",
+    start: todayStr + "T12:00:00",
+  },
+];
+
 function Calendar() {
   const {
     palette: { mode },
@@ -115,6 +135,7 @@ function Calendar() {
             select={handleDateClick}
             eventClick={handleEventClick}
             eventsSet={(events) => setCurrentEvents(events)}
+            initialEvents={INITIAL_EVENTS}
           />
         </Box>
       </Box>
