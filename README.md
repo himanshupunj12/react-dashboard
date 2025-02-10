@@ -22,8 +22,6 @@ This React dashboard aims to provide a clean and intuitive interface for display
 *   **Calendar Integration:** Integrates FullCalendar for displaying and managing events.
 *   **Material-UI (MUI) Components:** Leverages MUI for consistent and customizable UI elements.
 *   **Modular Architecture:**  Well-structured codebase for easy maintenance and scalability.
-*   **(Optional) Authentication:**  (If implemented) Secure user authentication.
-*   **(Optional) Data Fetching:** (If implemented)  Demonstrates how to fetch data from an API.
 
 ## Technologies Used
 
